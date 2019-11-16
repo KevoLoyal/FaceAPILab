@@ -1,0 +1,25 @@
+Source GUide
+https://gist.github.com/KevoLoyal/aa6ba531120427a3df9c3ba168991c55
+
+
+Installing Python 3.6 on Raspbian
+As of January 2018, Raspbian does not yet include the latest Python release, Python 3.6. This means we will have to build it ourselves, and here is how to do it. There is also an ansible role attached that automates it all for you.
+
+Install the required build-tools (some might already be installed on your system).
+
+$ sudo apt-get update
+$ sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+If one of the packages cannot be found, try a newer version number (e.g. libdb5.4-dev instead of libdb5.3-dev).
+
+Download and install Python 3.6. When downloading the source code, select the most recent release of Python 3.6, available on the official site. Adjust the file names accordingly.
+
+$ wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz
+$ tar xf Python-3.6.5.tar.xz
+$ cd Python-3.6.5
+$ ./configure
+$ make
+$ sudo make altinstall
+Optionally: Delete the source code and uninstall the previously installed packages. When uninstalling the packages, make sure you only remove those that were not previously installed on your system. Also, remember to adjust version numbers if necesarry.
+
+$ sudo rm -r Python-3.6.5
+$ rm Python-3.6.5.tar.xz
