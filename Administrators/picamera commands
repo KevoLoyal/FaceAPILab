@@ -1,0 +1,28 @@
+Guide
+https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-how-to-install-use-the-raspberry-pi-camera
+
+
+
+0. Install it manually
+1. Must enable the camera ( sudo raspi-config ) It should be under interface options, you can navigate and enable it
+2. After it was enabled, or even if it did not appeared, run:
+  "sudo apt-get update" and then "sudo apt-get upgrade"
+  
+  Start Using it ! 
+  
+ ---- raspistill and raspivid  ---
+  
+  
+To capture an image in jpeg format, type:
+
+ "raspistill -o image.jpg" 
+ 
+ at the prompt ( * where "image" is the name of your image ) 
+  
+  To capture video, we use raspivid ( We will not use it in our lab ) 
+  
+ To capture a 10 second video with your Raspberry Pi camera module, run "raspivid -o video.h264 -t 10000" at the prompt
+ where "video" is the name of your video and "10000" is the number of milliseconds
+ 
+  
+   
