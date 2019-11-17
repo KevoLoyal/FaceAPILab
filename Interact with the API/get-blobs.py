@@ -16,11 +16,11 @@ from os import path  # Import OS Path Function
 
 # Info to Blob
 
-blob_storage_key = 'MPcaH5oNp/+oNgexNGjSafKd4yl5Cxrnv/RlSEX+wNt4PYmCiT7CtHJ6at/5veg0705m70oS4xS35M6B/Y8rdA=='
+blob_storage_key = 'Key'
 
-connect_str = 'DefaultEndpointsProtocol=https;AccountName=cognitiveservicesblob;AccountKey=MPcaH5oNp/+oNgexNGjSafKd4yl5Cxrnv/RlSEX+wNt4PYmCiT7CtHJ6at/5veg0705m70oS4xS35M6B/Y8rdA==;EndpointSuffix=core.windows.net'
+connect_str = 'String'
 
-storage_account = 'cognitiveservicesblob'
+storage_account = 'account name'
 
 container_name = input("To what container you want to list? ")
 print("***********************************************")
