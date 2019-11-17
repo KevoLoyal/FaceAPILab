@@ -5,7 +5,8 @@ import http.client, urllib.request, urllib.parse, urllib.error, base64, requests
 
 
 # Subscription Key to identify my Service in Azure
-subscription_key = '782aa30d07324ea8a0302092a34da569'
+subscription_key = 'XXXXXXXXXXXXXXXXXXXXX'
+
 
 
 
