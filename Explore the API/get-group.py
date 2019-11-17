@@ -3,7 +3,8 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64, requests, json
 
 # Subscription Key to identify my Service in Azure
-subscription_key = '782aa30d07324ea8a0302092a34da569'
+subscription_key = 'XXXXXXXXXXXXXXXXXXXXX'
+
 
 
 # Azure Data Center Region where my service is hosted / End Point
